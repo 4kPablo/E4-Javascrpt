@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+body {
+    background-color: #222;
+    font-family: 'PT Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.super-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+    gap: 20px;
+    transition: 200ms;
+
+    .error {
+        // color: white;
+        background-color: rgb(255, 100, 100);
+        border-radius: .5em;
+        padding: 6px;
+    }
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: fit-content;
+    background-color: #dd6031;
+    border-radius: .5em;
+    padding: 15px;
+
+    .inputs-container {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 5px;
+    }
+
+    .input {
+        outline: 2px solid #222;
+        border: none;
+        border-radius: 0.5em;
+        padding: 5px;
+    }
+
+    #idInput {
+        cursor: text;
+    }
+
+    #buscarBtn {
+        cursor: pointer;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        margin-left: 7px;
+        height: 20px;
+        width: 20px;
+        transition: 100ms;
+
+        &:hover {
+            background-color: white;
+        }
+    }
+}
+
+.text {
+    margin: 0;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    width: fit-content;
+    flex-wrap: wrap;
+    border-radius: .5em;
+    gap: 15px;
+    padding: 15px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #eee;
+    border-radius: .5em;
+    width: 200px;
+    margin: 0%;
+
+    img {
+        width: 200px;
+        border-top-left-radius: .5em;
+        border-top-right-radius: .5em;
+        padding: 0;
+        margin: 0;
+    }
+
+    h2 {
+        padding: 5px 10px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 5px 10px;
+        margin: 0;
+        height: 80px;
+        align-content: center;
+    }
+
+    .card-bottom-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+
+        p {
+            padding: 5px;
+            font-size: 18px;
+            color: #444;
+        }
+
+        .input {
+            border: 2px solid rgba(169, 140, 54, 0);
+            border-radius: 0.5em;
+            padding: 5px;
+            background-color: rgb(229, 183, 46);
+            cursor: pointer;
+
+        }
+    }
+}
